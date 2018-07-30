@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8Ww-6f-GGz">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MapReplace-->
+        <scene sceneID="SPw-ag-8Ma">
+            <objects>
+                <viewController id="8Ww-6f-GGz" customClass="EZRMapReplaceViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HG0-9k-Jjf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4wJ-lz-pV2">
+                                <rect key="frame" x="0.0" y="74" width="375" height="300"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="375" placeholderIntrinsicHeight="120" translatesAutoresizingMaskIntoConstraints="NO" id="OWG-fd-ULf" customClass="EZRTimeLineView">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="b = [a mapReplace:@5]" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KqE-bJ-9ia">
+                                        <rect key="frame" x="0.0" y="120" width="375" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="uyv-NW-cxh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="375" placeholderIntrinsicHeight="120" translatesAutoresizingMaskIntoConstraints="NO" id="ipT-SS-N0W" customClass="EZRTimeLineView">
+                                        <rect key="frame" x="0.0" y="180" width="375" height="120"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Afx-W9-P2z"/>
+                                    <constraint firstItem="KqE-bJ-9ia" firstAttribute="leading" secondItem="4wJ-lz-pV2" secondAttribute="leading" id="B4E-fr-y8o"/>
+                                    <constraint firstAttribute="trailing" secondItem="ipT-SS-N0W" secondAttribute="trailing" id="CU4-wC-ieX"/>
+                                    <constraint firstItem="ipT-SS-N0W" firstAttribute="leading" secondItem="4wJ-lz-pV2" secondAttribute="leading" id="Mc9-ca-PFD"/>
+                                    <constraint firstItem="KqE-bJ-9ia" firstAttribute="top" secondItem="OWG-fd-ULf" secondAttribute="bottom" id="ZMH-bn-MiB"/>
+                                    <constraint firstItem="OWG-fd-ULf" firstAttribute="top" secondItem="4wJ-lz-pV2" secondAttribute="top" id="bhJ-7e-gQz"/>
+                                    <constraint firstAttribute="trailing" secondItem="OWG-fd-ULf" secondAttribute="trailing" id="hFy-EY-eUs"/>
+                                    <constraint firstItem="OWG-fd-ULf" firstAttribute="leading" secondItem="4wJ-lz-pV2" secondAttribute="leading" id="n6Q-Ju-RbG"/>
+                                    <constraint firstAttribute="bottom" secondItem="ipT-SS-N0W" secondAttribute="bottom" id="ny1-O0-Bi3"/>
+                                    <constraint firstAttribute="trailing" secondItem="KqE-bJ-9ia" secondAttribute="trailing" id="qhe-mc-ILM"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="375" placeholderIntrinsicHeight="60" translatesAutoresizingMaskIntoConstraints="NO" id="LKV-w3-n4V" customClass="EZRControlPanelView">
+                                <rect key="frame" x="0.0" y="414" width="375" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LKV-w3-n4V" firstAttribute="top" secondItem="4wJ-lz-pV2" secondAttribute="bottom" constant="40" id="51M-Iy-Rl9"/>
+                            <constraint firstItem="Yya-yw-kz7" firstAttribute="trailing" secondItem="4wJ-lz-pV2" secondAttribute="trailing" id="7Hj-7a-Nfn"/>
+                            <constraint firstItem="Yya-yw-kz7" firstAttribute="trailing" secondItem="LKV-w3-n4V" secondAttribute="trailing" id="9Ie-Q8-OU2"/>
+                            <constraint firstItem="4wJ-lz-pV2" firstAttribute="leading" secondItem="Yya-yw-kz7" secondAttribute="leading" id="X12-F0-rpI"/>
+                            <constraint firstItem="LKV-w3-n4V" firstAttribute="leading" secondItem="Yya-yw-kz7" secondAttribute="leading" id="qBG-L3-MCb"/>
+                            <constraint firstItem="4wJ-lz-pV2" firstAttribute="top" secondItem="Yya-yw-kz7" secondAttribute="top" constant="10" id="qz3-FX-e6X"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Yya-yw-kz7"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="MapReplace" id="WiJ-Cl-OeK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PLU-Ci-r3p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1000.8" y="-24.7376311844078"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Fx8-yj-zzO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tgs-Zf-d41" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EFn-uB-GIn">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8Ww-6f-GGz" kind="relationship" relationship="rootViewController" id="bFl-yD-0wf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sYu-a0-NSo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="61.600000000000001" y="-24.7376311844078"/>
+        </scene>
+    </scenes>
+</document>

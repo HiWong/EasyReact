@@ -10,7 +10,7 @@ PODS:
   - OCHamcrest (7.1.1)
   - OCMockito (5.1.0):
     - OCHamcrest (~> 7.0)
-  - Quick (1.3.0)
+  - Quick (1.3.1)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
   - ReactiveCocoa/Core (2.5):
@@ -52,7 +52,7 @@ SPEC CHECKSUMS:
   Nimble: 2839b01d1b31f6a6a7777a221f0d91cf52e8e27b
   OCHamcrest: 3506736397451c35d8763ff0a9b13492e544115f
   OCMockito: f420d00dc5ffbb7452f9f499cd1766e6583d61a5
-  Quick: 03278013f71aa05fe9ecabc94fbcc6835f1ee76f
+  Quick: d17304d58d0d169dd0bd1c6e5c28e3318de32a1a
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
 

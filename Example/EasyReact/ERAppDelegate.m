@@ -15,12 +15,23 @@
  **/
 
 #import "ERAppDelegate.h"
+#import <EasyReact/EasyReact.h>
 
 @implementation ERAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    EZRMutableNode<NSNumber *> *node = [EZRMutableNode value:@1];
+    NSObject *listener = [NSObject new];
+    [[node listenedBy:listener] withBlock:^(NSNumber *next) {
+        NSLog(@"下一个值是 %@", next);
+    }];
+    
+    node.value = @2;
+    [node clean];
+    node.value = @3;
+    listener = nil;
+    node.value = @4;
     return YES;
 }
 
